@@ -1,0 +1,175 @@
+<!--
+    fintech app designed by michael otote CEO @ototech industries
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTOTECH Fintech Software</title>
+    <link rel="stylesheet" href="./public/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./public/assets/icons/bitcoin1.png">
+
+</head>
+
+<header>
+    <style>
+        *{
+            -webkit-touch-callout:none;
+            -webkit-text-size-adjust: none;
+            -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+            -webkit-user-select:none;
+        }
+    </style>
+</header>
+<body>
+    <div class="title">
+        <div class="name-box">
+            <h2>OTOTECH Fintech Design</h2>
+        </div>
+    </div>
+    <div class="nav-bar">
+        <div class="link" onclick="toggleMenu()"></div>
+        <div class="user-box">
+            <a href="#">
+                <div class="user-pic">
+                   
+  
+                </div>
+            </a>
+            <p>Welcome......</p>
+        </div>
+        <div class="action-center">
+           <i class="fa fa-bell">
+            <div class="notification"><p>13</p></div>
+           </i>
+           <i class="fa fa-bell">
+            <div class="notification"><p>13</p></div>
+           </i>
+        </div>
+    </div>
+
+    <!--sidebar section-->
+    <div class="sidebar">
+        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus at aliquid architecto voluptate praesentium dolorem, ipsam nihil quasi totam.
+        </h1>
+    </div>
+    <!--account details section-->
+    <div class="accounts">
+        <div class="balance-box" id="box">
+            <div class="segment1">
+                <img src="./public/assets/images/instruction-2.png" id="image" alt="wallet image">
+                <span>
+                    <p>wallet account</p>
+                    
+                </span>
+
+            </div>
+            <div class="segment2">
+                <p>current balance:</p>
+                <h2><s>N</s>100,000.00 <i class="fa fa-eye"></i></h2>
+            </div>
+        </div>
+        <div class="savings-box" id="box">
+           <div class="slide1">
+            <img src="./public/assets/images/instruction-4.png" id="saving-image" alt="savings image">
+            <div class="saving-write-up">
+                <p>currently saving:</p>
+                <h2><s>N</s>0.00</h2>
+                <h5>save at 18% PA</h5>
+
+            </div>
+
+           </div>
+           <div class="slide2">
+            <a href="#"><button>Save now!!!</button></a>
+           </div>
+        </div>
+        <div class="loan-box" id="box">
+            <div class="loan-box1">
+                <img src="./public/assets/images/loan.png" id="loan-image" alt="loan image">
+                <div class="loan-write-up">
+                    <p>Take a loan with low interest at 0.1% daily</p>
+    
+                </div>
+    
+               </div>
+               <div class="loan-box2">
+                <a href="#"><button>apply</button></a>
+               </div>
+        </div>
+    </div>
+
+    <!--widget section-->
+    <div class="widget">
+        <div class="first-tab" id="tab">
+            <!--transfer button-->
+           <div class="transfer" id="transaction">
+            <img src="./public/assets/images/transfer.png" id="icon" alt="history icon">
+            <p>Transfer to bank</p>
+           </div> 
+           <!--dashboard button-->
+           <div class="dashboard" id="transaction">
+            <img src="./public/assets/images/instruction-3.png" id="icon" alt="history icon">
+            <p>money-in and money-out</p>
+
+           </div>
+              <!--airtime button-->
+              <div class="airtime" id="transaction">
+               <img src="./public/assets/images/top-up.png" id="icon" alt="airtime icon">
+               <p> airtime and data</p>
+   
+              </div>
+         
+
+        </div>
+        <div class="second-tab" id="tab">
+            <!--cards section-->
+            <div class="card" id="transaction">
+                <img src="./public/assets/images/card.png" id="icon" alt="history icon">
+                <p>wallet cards</p>
+               </div> 
+
+               <!--electricity button-->
+               <div class="light" id="transaction">
+                <img src="./public/assets/images/light.png" id="icon" alt="light icon">
+                <p>electricity</p>
+    
+               </div>
+                  <!--tv button-->
+                  <div class="cable" id="transaction">
+                   <img src="./public/assets/images/tv.png" id="icon" alt="airtime icon">
+                   <p>cable tv</p>
+       
+                  </div>
+               
+        </div>
+        <div class="third-tab" id="tab">
+             <!--crypto  section-->
+             <div class="crypto" id="transaction">
+                <img src="./public/assets/images/bitcoin1.png" id="icon" alt="crypto icon">
+                <p>buy crypto</p>
+               </div> 
+
+               <!--education  button-->
+               <div class="school" id="transaction">
+                <img src="./public/assets/images/school.png" id="icon" alt="education icon">
+                <p>school and exams</p>
+    
+               </div>
+                  <!--shopping button-->
+                  <div class="store" id="transaction">
+                   <img src="./public/assets/images/cart.png" id="icon" alt="airtime icon">
+                   <p>shopping </p>
+       
+                  </div>
+               
+        </div>
+    </div>
+
+    
+</body>
+<script src="./public/script/menu.js"></script>
+</html>
