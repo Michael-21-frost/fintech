@@ -95,8 +95,8 @@ color:grey;
 
 }
 .user-box p{
-    margin-left: 14%;
-    margin-top: 10%;
+    margin-left: 20%;
+    margin-top: 15%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgba(128, 128, 128, 0.938);
 }
@@ -339,7 +339,7 @@ h2 i{
     width: 95vw;
     padding: 5px;
     background-color: white;
-    box-shadow: 2px 2px 4px whitesmoke,-2px -2px 4px whitesmoke;
+    box-shadow: 2px 2px 4px rgba(245, 245, 245, 0.322),-2px -2px 4px whitesmoke;
     margin-left: 2.5%;
     border-radius: 10px;
     border-left-color: rgba(128, 128, 128, 0);
@@ -370,7 +370,7 @@ h2 i{
 }
 #transaction{
     width: 30vw;
-    height: 15vh;
+    height: 13vh;
     background-color:white;
     margin: 8px;
     text-align: center;
@@ -380,10 +380,8 @@ h2 i{
     border-left-color: rgba(128, 128, 128, 0);
     border-right-color: rgba(128, 128, 128, 0);
 }
-#transaction:hover{
-    width: 31vw;
-    height: 16vh;
-    transition: 1s;
+#transaction:active{
+    opacity: 0.6;
 }
 a{
     text-decoration: none;
@@ -392,7 +390,7 @@ a{
 .transfer p{
     color:rgb(73, 20, 73);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     text-transform:capitalize;
     
 }
@@ -406,14 +404,14 @@ a{
 .dashboard p{
     color:rgb(73, 20, 73);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     text-transform:capitalize;
 
 }
 .airtime p{
     color:rgb(73, 20, 73);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     text-transform: capitalize;
 
 }
@@ -424,38 +422,38 @@ a{
 .card p{
     color:rgb(73, 20, 73);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     text-transform: capitalize;
 
 }
 .light p{
     color:rgb(73, 20, 73);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     text-transform: capitalize;
 }
 .cable p{
     color:rgb(73, 20, 73);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     text-transform: capitalize;
 }
 .crypto p{
     color:rgb(73, 20, 73);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     text-transform: capitalize;
 }
 .school p{
     color:rgb(73, 20, 73);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     text-transform: capitalize;
 }
 .store p{
     color:rgb(73, 20, 73);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     text-transform: capitalize;
 
 }
@@ -486,7 +484,8 @@ devices responsiveness
     .action-center{
         display: flex;
         margin-top: 0%;
-        margin-left: 20%;
+        margin-left: 45%;
+        width: 100vw;
     }
     .action-center i{
         display: flex;
@@ -501,18 +500,28 @@ devices responsiveness
         font-size: 12px;
     }
     .accounts{
-        width: 98vw;
+        width: 300vw;
        margin: 0%;
        margin-top: 2%;
+
     }
     .accounts::-webkit-scrollbar{
-        display: none;
+        scroll-behavior: smooth;
     }
+  
     #box{
-        display: none;
+    
+        width: 100vw;
     }
+    h2 i{
+        margin-left: 2%;
+        margin-top: 2%;
+
+    }
+
     .widget{
         margin: 0%;
+        margin-top: 5%;
     }
 
     .transfer img{
@@ -523,11 +532,13 @@ devices responsiveness
   
     .action-center{
         margin-top:0%;
-        margin-left: 40%;
+        margin-left: 80%;
+        position: absolute;
 
     }
     .action-center i{
         font-size: 20px;
+       
     }
     .link{
         top:1%;
