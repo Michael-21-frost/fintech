@@ -1,0 +1,588 @@
+/***
+fintech app design by michael otote stylesheet for the main app page and device responsiveness
+
+
+***/ 
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body,html{
+    position: relative;
+    z-index: 100;
+    width: 100vw;
+    overflow: hidden;
+
+}
+.title{
+    width: 100vw;
+    height: 3vh;
+    background-color: whitesmoke;
+    color: rgb(150, 148, 148);
+    text-align: center;
+    z-index: 9;
+
+
+}
+.name-box h2{
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-bar{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    z-index: 100;
+    background-color: white;
+
+    
+   
+   
+
+}
+
+.link{
+    position: fixed;
+    top: 1.5%;
+    left: 0%;
+    width: 60px;
+    height: 30px;
+    background-color:;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 6;
+    
+
+}
+.link.active{
+color:grey;
+
+}
+.link:before{
+    content:'\f0c9';
+    font-family:fontAwesome;
+    position: absolute;
+    width:100%;
+    height:100%;
+    line-height:60px;
+    text-align: center;
+    font-size: 24px;
+    color:grey;
+
+}
+.link.active:before{
+    content:'\f00d';
+    color:grey;
+}
+.user-box{  
+    display: flex;
+    margin-left: 6%;
+  
+}
+.user-pic{
+    background-image: url('../assets/images/user.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin-top: 7%;
+
+}
+.user-box p{
+    margin-left: 20%;
+    margin-top: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(128, 128, 128, 0.938);
+}
+.action-center{
+    margin-left: 70%;
+    line-height: 2;
+  
+}
+.action-center i{
+    margin: 10px;
+    color: rgba(128, 128, 128, 0.87);
+    cursor: pointer;
+    font-size: 25px;
+
+}
+.action-center i:active{
+    font-size: smaller;
+}
+.notification{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color:rgb(73, 20, 73);
+    color: white;
+    text-align: center;
+    line-height: 1.7;
+    position: absolute;
+    margin-top: -2.5%;
+    margin-left: -0.5%;
+    
+}
+.notification p{
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.sidebar{
+    position:fixed;
+    width: 0px;
+    height: 100vh;
+    margin-top:0.5%;
+    margin-left:-8px;
+    background-color:rgb(73, 20, 73);
+    transition: 0.5s;
+    z-index: 9;
+    opacity:0.9;
+    overflow:hidden;
+    color: white;
+    text-align: center;
+}
+h1{
+    margin-top: 20%;
+}
+
+
+
+.sidebar.active
+{
+    width: 102vw;
+    
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+.accounts{
+    width: 95vw;
+    margin: 10px;
+    display: flex;
+    height: 30vh;
+    border: 1px solid rgb(231, 225, 225);
+    box-shadow: 2px 2px 4px whitesmoke;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    border-left-color: rgba(128, 128, 128, 0);
+    border-right-color: rgba(128, 128, 128, 0);
+}
+#box{
+    width: 30vw;
+    height: 25vh;
+    margin: 12px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+
+}
+.balance-box{
+    background-color:rgb(73, 20, 73);
+    display: block;
+    
+}
+.segment1{
+    display:flex;
+    background-color: transparent;
+    width: 95%;
+    height: 60%;
+    transform: translate(2%, 0%);
+}
+#image{
+    margin-left: 5%;
+}
+span{
+    background-color: transparent;
+    width: 55%;
+    height: auto;
+}
+span p{
+    margin-top: 20%;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 i{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 1%;
+    margin-top: 0.7%;
+    position: absolute;
+}
+.segment2{
+    height: 40%;
+    margin-left: -15%;
+    margin-top: -2%;
+
+}
+.segment2 p{
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-left: -20%;
+}
+.segment2 h2{
+    font-size: 30px;
+    margin-left: -12%;
+}
+.savings-box{
+    background-color: rgb(197, 8, 46);
+    display: block;
+    text-align: center;
+}
+.slide1{
+    display: flex;
+    margin-top: 5%;
+    height: 60%;
+    
+}
+#saving-image{
+    height: 100px;
+    width: 170px;
+}
+.saving-write-up{
+    display: block;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.saving-write-up p{
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    margin-left: -40%;
+    font-style: bold;
+}
+.saving-write-up h2{
+    margin-left: -60%;
+    
+}
+.saving-write-up h5{
+    font-size: 20px;
+    margin-left: -8%;
+}
+.slide2 button{
+    margin-top: 2.5%;
+    font-size: 20px;
+    width: 90%;
+    height: 4vh;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(133, 86, 86, 0.466);
+}
+.slide2 button:active{
+    font-size: 18px;
+    width: 87%;
+}
+.slide2 button:hover{
+    opacity: 0.5;
+}
+
+.loan-box{
+    background-color: rgb(57, 66, 57);
+    display: block;
+}
+.loan-box1{
+    display: flex;
+    height: 60%;
+    margin-top: 5%;
+}
+#loan-image{
+    width: 80px;
+    height: 80px;
+    margin-left: 10%;
+    
+
+}
+.loan-write-up p{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5%;
+    margin-left: -2%;
+   
+}
+.loan-box2 button{
+    margin-top: 2.2%;
+    font-size: 20px;
+    width: 90%;
+    height: 4vh;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-transform: capitalize;
+    background-color: rgba(84, 131, 112, 0.466);
+}
+.loan-box2 button:active{
+    font-size: 18px;
+    width: 87%;
+}
+.loan-box2 button:hover{
+    opacity: 0.5;
+}
+
+
+.widget{
+    height: 57vh;
+    width: 95vw;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(245, 245, 245, 0.322),-2px -2px 4px whitesmoke;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    border-left-color: rgba(128, 128, 128, 0);
+    border-right-color: rgba(128, 128, 128, 0);
+}
+#tab{
+    height:17vh;
+    width: 94vw;
+    margin: 2px;
+    padding: 5px;
+    background-color: black;
+
+}
+.first-tab{
+    display: flex;
+    background-color: white !important;
+    
+}
+.second-tab{
+    display: flex;
+    background-color: white !important;
+    
+}
+.third-tab{
+    display: flex;
+    background-color: white !important;
+
+}
+#transaction{
+    width: 30vw;
+    height: 13vh;
+    background-color:white;
+    margin: 8px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(97, 72, 100, 0.13), -1px -1px 4px rgba(97, 72, 100, 0.096);
+    border-left-color: rgba(128, 128, 128, 0);
+    border-right-color: rgba(128, 128, 128, 0);
+}
+#transaction:active{
+    opacity: 0.6;
+}
+a{
+    text-decoration: none;
+}
+
+.transfer p{
+    color:rgb(73, 20, 73);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform:capitalize;
+    
+}
+.dashboard i{
+    color: rgb(73, 20, 73);
+    font-size: 35px;
+    margin-top: 5%;
+
+
+}
+.dashboard p{
+    color:rgb(73, 20, 73);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform:capitalize;
+
+}
+.airtime p{
+    color:rgb(73, 20, 73);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform: capitalize;
+
+}
+#icon{
+    height: 45px;
+    margin-top: 5%;
+}
+.card p{
+    color:rgb(73, 20, 73);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform: capitalize;
+
+}
+.light p{
+    color:rgb(73, 20, 73);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+.cable p{
+    color:rgb(73, 20, 73);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+.crypto p{
+    color:rgb(73, 20, 73);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+.school p{
+    color:rgb(73, 20, 73);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+.store p{
+    color:rgb(73, 20, 73);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform: capitalize;
+
+}
+
+/***
+devices responsiveness
+**/
+@media(max-width:767px){
+    body{
+        background-color: white;
+    }
+    .nav-bar{
+
+    }
+    .user-box{
+        margin-top: -1%;
+        margin-left: 10%;
+    }
+    .user-pic{
+        margin-top: 15%;
+        margin-left: 40%;
+    }
+    .link{
+        margin-left: -1.5%;
+        top: 1.5%;
+    }
+ 
+    .action-center{
+        display: flex;
+        margin-top: 0%;
+        margin-left: 45%;
+        width: 100vw;
+    }
+    .action-center i{
+        display: flex;
+        font-size: 23px;
+    }
+    .notification{
+        height: 20px;
+        width: 20px;
+        margin-left: -1%;
+    }
+    .notification p{
+        font-size: 12px;
+    }
+    .accounts{
+        width: 300vw;
+       margin: 0%;
+       margin-top: 2%;
+
+    }
+    .accounts::-webkit-scrollbar{
+        scroll-behavior: smooth;
+    }
+  
+    #box{
+    
+        width: 100vw;
+    }
+    h2 i{
+        margin-left: 2%;
+        margin-top: 2%;
+
+    }
+
+    .widget{
+        margin: 0%;
+        margin-top: 5%;
+    }
+
+    .transfer img{
+        width: 80px;
+    }
+}
+@media(max-width:991px) and (min-width:400px){
+  
+    .action-center{
+        margin-top:0%;
+        margin-left: 80%;
+        position: absolute;
+
+    }
+    .action-center i{
+        font-size: 20px;
+       
+    }
+    .link{
+        top:1%;
+    }
+    .user-pic{
+        margin-top: 25%;
+    }
+    .user-box p{
+        margin-top: 13%;
+    }
+    .sidebar{
+        margin-top: 2%;
+    }
+    .accounts{
+        margin-top: 3%;
+        margin-left: 1%;
+    }
+    .sidebar{
+        margin-top: 3%;
+    }
+
+}
+@media(max-width:900px) and(min-width
+:767px){
+    .nav-bar{
+        background-color: greenyellow;
+    }
+    .link{
+        margin-top: -1%;
+    }
+    .user-pic{
+        margin-top: -5%;
+    }
+    .user-box p{
+        margin-top: 3%;
+    }
+    .action-center{
+        margin-left: 60%;
+        margin-top: -1%;
+    }
+    .notification{
+        margin-top: -3%;
+        width: 20px;
+        height: 20px;
+    }
+
+}
