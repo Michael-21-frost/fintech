@@ -206,7 +206,7 @@ span{
     height: auto;
 }
 span p{
-    margin-top: 20%;
+    margin-top: 10%;
     text-transform: capitalize;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -348,8 +348,7 @@ h2 i{
 #tab{
     height:17vh;
     width: 94vw;
-    margin: 2px;
-    padding: 5px;
+    margin: 1px;
     background-color: black;
 
 }
@@ -361,6 +360,7 @@ h2 i{
 .second-tab{
     display: flex;
     background-color: white !important;
+ 
     
 }
 .third-tab{
@@ -513,19 +513,32 @@ devices responsiveness
     
         width: 100vw;
     }
+    .segment2 h2{
+        margin-left: -55px;
+    }
     h2 i{
         margin-left: 2%;
         margin-top: 2%;
 
+    }
+    .segment2 p{
+        margin-left: -25%;
     }
 
     .widget{
         margin: 0%;
         margin-top: 5%;
     }
+  
+    #transaction p{
+        font-size: 9px;
+    }
 
     .transfer img{
         width: 80px;
+    }
+    #tab{
+        padding: -5%;
     }
 }
 @media(max-width:991px) and (min-width:400px){
@@ -547,7 +560,7 @@ devices responsiveness
         margin-top: 25%;
     }
     .user-box p{
-        margin-top: 13%;
+        margin-top: 25%;
     }
     .sidebar{
         margin-top: 2%;
@@ -558,6 +571,12 @@ devices responsiveness
     }
     .sidebar{
         margin-top: 3%;
+    }
+    span p{
+        margin-top: 5%;
+    }
+    .segment2{
+        margin-left: -35%;
     }
 
 }
